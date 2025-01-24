@@ -39,10 +39,10 @@ struct ScannerView: UIViewControllerRepresentable {
             recognizedDataTypes: [
                 .text()
             ],
-            qualityLevel: .balanced,
+            qualityLevel: .accurate,
             recognizesMultipleItems: true,
             isHighFrameRateTrackingEnabled: true, isPinchToZoomEnabled: true,
-            isHighlightingEnabled: true
+            isHighlightingEnabled: false
     
         )
         scanner.delegate = context.coordinator
@@ -93,22 +93,23 @@ struct ScannerView: UIViewControllerRepresentable {
         func dataScanner(_ dataScanner: DataScannerViewController, didAdd addedItems: [RecognizedItem], allItems: [RecognizedItem]) {
             
             for item in addedItems {
-                let overlayView = UIView(frame: convertBoundsToCGRect(item.bounds))
-                overlayView.layer.borderColor = UIColor.green.cgColor
-                overlayView.layer.borderWidth = 2.0
-                itemHighlightViews[item.id] = overlayView
-                
                 switch item {
                 case .text(let text):
-                    parent.scannedText = text.transcript
-
+                    
+                    let overlayView = UILabel(frame: convertBoundsToCGRect(item.bounds))
+                    overlayView.layer.borderColor = UIColor.green.cgColor
+                    overlayView.layer.borderWidth = 2.0
+                    overlayView.textColor = .white
+                    overlayView.textAlignment = .center
+                    overlayView.text = text.transcript
+                    itemHighlightViews[item.id] = overlayView
+                    dataScanner.overlayContainerView.addSubview(overlayView)
                     
                 default:
                     break
                 }
-                overlayView.draw(item)
-
-                dataScanner.overlayContainerView.addSubview(overlayView)
+                //let overlayView = UIView(frame: convertBoundsToCGRect(item.bounds))
+              
             }
             
             //parent.presentationMode.wrappedValue.dismiss()
@@ -138,4 +139,3 @@ struct ScannerView: UIViewControllerRepresentable {
     }
     
 }
-

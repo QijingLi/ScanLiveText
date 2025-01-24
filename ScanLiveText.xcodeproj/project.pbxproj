@@ -24,18 +24,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6FFFC09C2D34B0DC0016AC3B /* ScanText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanText.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FFFC0AC2D34B0DD0016AC3B /* ScanTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FFFC0B62D34B0DD0016AC3B /* ScanTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FFFC09C2D34B0DC0016AC3B /* ScanLiveText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanLiveText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FFFC0AC2D34B0DD0016AC3B /* ScanLiveTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanLiveTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FFFC0B62D34B0DD0016AC3B /* ScanLiveTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanLiveTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		6FFFC0CA2D34B13A0016AC3B /* Exceptions for "ScanText" folder in "ScanText" target */ = {
+		6FFFC0CA2D34B13A0016AC3B /* Exceptions for "ScanText" folder in "ScanLiveText" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 6FFFC09B2D34B0DC0016AC3B /* ScanText */;
+			target = 6FFFC09B2D34B0DC0016AC3B /* ScanLiveText */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -43,7 +43,7 @@
 		6FFFC09E2D34B0DC0016AC3B /* ScanText */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				6FFFC0CA2D34B13A0016AC3B /* Exceptions for "ScanText" folder in "ScanText" target */,
+				6FFFC0CA2D34B13A0016AC3B /* Exceptions for "ScanText" folder in "ScanLiveText" target */,
 			);
 			path = ScanText;
 			sourceTree = "<group>";
@@ -98,9 +98,9 @@
 		6FFFC09D2D34B0DC0016AC3B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FFFC09C2D34B0DC0016AC3B /* ScanText.app */,
-				6FFFC0AC2D34B0DD0016AC3B /* ScanTextTests.xctest */,
-				6FFFC0B62D34B0DD0016AC3B /* ScanTextUITests.xctest */,
+				6FFFC09C2D34B0DC0016AC3B /* ScanLiveText.app */,
+				6FFFC0AC2D34B0DD0016AC3B /* ScanLiveTextTests.xctest */,
+				6FFFC0B62D34B0DD0016AC3B /* ScanLiveTextUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6FFFC09B2D34B0DC0016AC3B /* ScanText */ = {
+		6FFFC09B2D34B0DC0016AC3B /* ScanLiveText */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FFFC0C02D34B0DD0016AC3B /* Build configuration list for PBXNativeTarget "ScanText" */;
+			buildConfigurationList = 6FFFC0C02D34B0DD0016AC3B /* Build configuration list for PBXNativeTarget "ScanLiveText" */;
 			buildPhases = (
 				6FFFC0982D34B0DC0016AC3B /* Sources */,
 				6FFFC0992D34B0DC0016AC3B /* Frameworks */,
@@ -123,16 +123,16 @@
 			fileSystemSynchronizedGroups = (
 				6FFFC09E2D34B0DC0016AC3B /* ScanText */,
 			);
-			name = ScanText;
+			name = ScanLiveText;
 			packageProductDependencies = (
 			);
 			productName = ScanText;
-			productReference = 6FFFC09C2D34B0DC0016AC3B /* ScanText.app */;
+			productReference = 6FFFC09C2D34B0DC0016AC3B /* ScanLiveText.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6FFFC0AB2D34B0DD0016AC3B /* ScanTextTests */ = {
+		6FFFC0AB2D34B0DD0016AC3B /* ScanLiveTextTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FFFC0C32D34B0DD0016AC3B /* Build configuration list for PBXNativeTarget "ScanTextTests" */;
+			buildConfigurationList = 6FFFC0C32D34B0DD0016AC3B /* Build configuration list for PBXNativeTarget "ScanLiveTextTests" */;
 			buildPhases = (
 				6FFFC0A82D34B0DD0016AC3B /* Sources */,
 				6FFFC0A92D34B0DD0016AC3B /* Frameworks */,
@@ -146,16 +146,16 @@
 			fileSystemSynchronizedGroups = (
 				6FFFC0AF2D34B0DD0016AC3B /* ScanTextTests */,
 			);
-			name = ScanTextTests;
+			name = ScanLiveTextTests;
 			packageProductDependencies = (
 			);
 			productName = ScanTextTests;
-			productReference = 6FFFC0AC2D34B0DD0016AC3B /* ScanTextTests.xctest */;
+			productReference = 6FFFC0AC2D34B0DD0016AC3B /* ScanLiveTextTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6FFFC0B52D34B0DD0016AC3B /* ScanTextUITests */ = {
+		6FFFC0B52D34B0DD0016AC3B /* ScanLiveTextUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FFFC0C62D34B0DD0016AC3B /* Build configuration list for PBXNativeTarget "ScanTextUITests" */;
+			buildConfigurationList = 6FFFC0C62D34B0DD0016AC3B /* Build configuration list for PBXNativeTarget "ScanLiveTextUITests" */;
 			buildPhases = (
 				6FFFC0B22D34B0DD0016AC3B /* Sources */,
 				6FFFC0B32D34B0DD0016AC3B /* Frameworks */,
@@ -169,11 +169,11 @@
 			fileSystemSynchronizedGroups = (
 				6FFFC0B92D34B0DD0016AC3B /* ScanTextUITests */,
 			);
-			name = ScanTextUITests;
+			name = ScanLiveTextUITests;
 			packageProductDependencies = (
 			);
 			productName = ScanTextUITests;
-			productReference = 6FFFC0B62D34B0DD0016AC3B /* ScanTextUITests.xctest */;
+			productReference = 6FFFC0B62D34B0DD0016AC3B /* ScanLiveTextUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6FFFC0972D34B0DC0016AC3B /* Build configuration list for PBXProject "ScanText" */;
+			buildConfigurationList = 6FFFC0972D34B0DC0016AC3B /* Build configuration list for PBXProject "ScanLiveText" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -213,9 +213,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6FFFC09B2D34B0DC0016AC3B /* ScanText */,
-				6FFFC0AB2D34B0DD0016AC3B /* ScanTextTests */,
-				6FFFC0B52D34B0DD0016AC3B /* ScanTextUITests */,
+				6FFFC09B2D34B0DC0016AC3B /* ScanLiveText */,
+				6FFFC0AB2D34B0DD0016AC3B /* ScanLiveTextTests */,
+				6FFFC0B52D34B0DD0016AC3B /* ScanLiveTextUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,12 +271,12 @@
 /* Begin PBXTargetDependency section */
 		6FFFC0AE2D34B0DD0016AC3B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6FFFC09B2D34B0DC0016AC3B /* ScanText */;
+			target = 6FFFC09B2D34B0DC0016AC3B /* ScanLiveText */;
 			targetProxy = 6FFFC0AD2D34B0DD0016AC3B /* PBXContainerItemProxy */;
 		};
 		6FFFC0B82D34B0DD0016AC3B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6FFFC09B2D34B0DC0016AC3B /* ScanText */;
+			target = 6FFFC09B2D34B0DC0016AC3B /* ScanLiveText */;
 			targetProxy = 6FFFC0B72D34B0DD0016AC3B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,7 +480,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanText.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScanText";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanLiveText.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScanLiveText";
 			};
 			name = Debug;
 		};
@@ -499,7 +499,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanText.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScanText";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanLiveText.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScanLiveText";
 			};
 			name = Release;
 		};
@@ -540,7 +540,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6FFFC0972D34B0DC0016AC3B /* Build configuration list for PBXProject "ScanText" */ = {
+		6FFFC0972D34B0DC0016AC3B /* Build configuration list for PBXProject "ScanLiveText" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FFFC0BE2D34B0DD0016AC3B /* Debug */,
@@ -549,7 +549,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FFFC0C02D34B0DD0016AC3B /* Build configuration list for PBXNativeTarget "ScanText" */ = {
+		6FFFC0C02D34B0DD0016AC3B /* Build configuration list for PBXNativeTarget "ScanLiveText" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FFFC0C12D34B0DD0016AC3B /* Debug */,
@@ -558,7 +558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FFFC0C32D34B0DD0016AC3B /* Build configuration list for PBXNativeTarget "ScanTextTests" */ = {
+		6FFFC0C32D34B0DD0016AC3B /* Build configuration list for PBXNativeTarget "ScanLiveTextTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FFFC0C42D34B0DD0016AC3B /* Debug */,
@@ -567,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FFFC0C62D34B0DD0016AC3B /* Build configuration list for PBXNativeTarget "ScanTextUITests" */ = {
+		6FFFC0C62D34B0DD0016AC3B /* Build configuration list for PBXNativeTarget "ScanLiveTextUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FFFC0C72D34B0DD0016AC3B /* Debug */,

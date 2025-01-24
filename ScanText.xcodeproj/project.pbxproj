@@ -29,9 +29,22 @@
 		6FFFC0B62D34B0DD0016AC3B /* ScanTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6FFFC0CA2D34B13A0016AC3B /* Exceptions for "ScanText" folder in "ScanText" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6FFFC09B2D34B0DC0016AC3B /* ScanText */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6FFFC09E2D34B0DC0016AC3B /* ScanText */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6FFFC0CA2D34B13A0016AC3B /* Exceptions for "ScanText" folder in "ScanText" target */,
+			);
 			path = ScanText;
 			sourceTree = "<group>";
 		};
@@ -399,6 +412,8 @@
 				DEVELOPMENT_TEAM = 3DQ9A7NGR3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScanText/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "It's used for scanning text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -414,6 +429,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				dd = "";
 			};
 			name = Debug;
 		};
@@ -428,6 +444,8 @@
 				DEVELOPMENT_TEAM = 3DQ9A7NGR3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScanText/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "It's used for scanning text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -443,6 +461,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				dd = "";
 			};
 			name = Release;
 		};

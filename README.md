@@ -1,27 +1,27 @@
 # ScanLiveText
 
 ## Background
-My daughter who's second grader often asked me to check her math homework which
-were column math sheets.It led me to think if it can be automated with IPhone 
-camera. By the way I had no experience of iphone app development before.
+My sweet daughter(a second grader) often asked me to check her math homework.
+That made me think If I can develop an app to autocheck using iphone's camera.
 
 ## Goal
-This app can extact the numbers and operators(+/-/*) from the worksheet and 
-do the math and display the indicator whether they matches the results my 
-daughter wrote down or not. 
+This app can extact the only numbers and operators(+/-/*) from the column math
+sheets and do the math and then display the indicator which are correct and
+which are not. 
 
 ## Implementation
-After some research I did with Google, I decided to use Claude 3.5 to generate
-the codebase, it used apple framework VisionKit for extracting text using iphone
-camera, chatted back and forth with claude about the issues I had, and I got it
-up and running on my iphone 14, so exiting! Then I started to tailor it to my 
-specific needs, this was when my struggling with AI model came, it did not make 
-some progress, I lost confidence to continue it with just aksing AI. I stepped
-back to read the apple developer documents for VisonKit framework and Swift
-language guide. and I regenerated the codebase with Claude, fixed several issues,
-got the version of displaying the regonized text with green rectangle running.
-The test result showed the OCR accuracy with VisionKit was NOT surfficient for
-my original goal. So I stopped here. Furture, I'd try the OCR engine tesseract.
+I had no experience of iphone app development. After some research I did with
+Google, I decided to use Claude 3.5 to generate the codebase which used apple's
+framework VisionKit, after chatted back and forth with claude, and I got it up
+and running on my iphone 14, so exiting! Then I started to tailor it to my
+specific needs by asking Claude to make changes, but I always got build errors.
+I could not make any progress for a while. And I stepped back to read the apple
+developer documents and played around Swift language. And I regenerated the
+codebase with Claude, fixed several issues, this time I was confident to make
+changes, I know what I was doing. I got this iteration working which was to
+simply display the regonized text with green rectangle, I just wanted to see
+the OCR accuracy is good enough, unfortunately it's not, so I stopped here. 
+Furture, I'd probably try the OCR engine tesseract.
 
 ## Result
 <!-- ![page_1](images/IMG_3698.jpg=1170×2532) -->

@@ -100,7 +100,7 @@ struct ScannerView: UIViewControllerRepresentable {
                     overlayView.layer.borderColor = UIColor.green.cgColor
                     overlayView.layer.borderWidth = 2.0
                     overlayView.textColor = .white
-                    overlayView.textAlignment = .center
+                    overlayView.textAlignment = .justified
                     overlayView.text = text.transcript
                     itemHighlightViews[item.id] = overlayView
                     dataScanner.overlayContainerView.addSubview(overlayView)

@@ -10,13 +10,11 @@ import VisionKit
 
 struct ContentView: View {
     @State private var showScanner = false
-    @State private var scannedText = ""
+    @State private var scannedText: String = ""
+    @State private var target = ""
     
     var body: some View {
         VStack {
-            Text(scannedText.isEmpty ? "No text scanned yet" : scannedText)
-                .padding()
-            
             Button("Start Scanning") {
                 if DataScannerViewController.isSupported &&
                    DataScannerViewController.isAvailable {
@@ -63,30 +61,6 @@ struct ScannerView: UIViewControllerRepresentable {
             self.parent = parent
         }
         
-        /*
-         func dataScanner(_ dataScanner: DataScannerViewController, didTapOn item: RecognizedItem) {
-            switch item {
-            case .text(let text):
-                parent.scannedText = text.transcript
-                parent.scannedText += descBound(bound: text.bounds)
-                parent.presentationMode.wrappedValue.dismiss()
-                
-            default:
-                break
-            }
-        }
-      
-        // Dictionary to store our custom highlights keyed by their associated item ID.
-        var itemHighlightViews: [RecognizedItem.ID: HighlightView] = [:]
-
-        // For each new item, create a new highlight view and add it to the view hierarchy.
-        func dataScanner(_ dataScanner: DataScannerViewController, didAdd addItems: [RecognizedItem], allItems: [RecognizedItem]) {
-            for item in addedItems {
-                let newView = newHighlightView(forItem: item)
-                itemHighlightViews[item.id] = newView
-                dataScanner.overlayContainerView.addSubview(newView)
-            }
-        }*/
         
         var itemHighlightViews: [RecognizedItem.ID: UIView] = [:]
         
@@ -108,11 +82,11 @@ struct ScannerView: UIViewControllerRepresentable {
                 default:
                     break
                 }
-                //let overlayView = UIView(frame: convertBoundsToCGRect(item.bounds))
+    
               
             }
             
-            //parent.presentationMode.wrappedValue.dismiss()
+       
         }
         
         // Remove highlights when their associated items are removed.
